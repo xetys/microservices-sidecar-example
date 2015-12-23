@@ -2,3 +2,4 @@
 include 'eureka'
 include 'simple1'
 include 'simple2'
+include 'zuul'

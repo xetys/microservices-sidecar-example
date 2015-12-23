@@ -1,0 +1,14 @@
+eureka:
+  build: ./eureka
+  ports:
+    - "8761:8761"
+simple1:
+  build: ./simple1
+  links:
+   - eureka
+zuul:
+  build: ./zuul
+  links:
+   - eureka
+  ports:
+    - "8080:8080"
