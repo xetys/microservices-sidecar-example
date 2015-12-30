@@ -6,6 +6,10 @@ simple1:
   build: ./simple1
   links:
    - eureka
+simple2:
+  build: ./simple2
+  links:
+   - eureka
 zuul:
   build: ./zuul
   links:

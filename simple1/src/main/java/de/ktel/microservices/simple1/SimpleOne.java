@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class SimpleOne {
     @RequestMapping("/")
     public String greet() {
-        return "Hello World";
+        return "Hello World3";
     }
     public static void main(String[] args) {
         SpringApplication.run(SimpleOne.class, args);
