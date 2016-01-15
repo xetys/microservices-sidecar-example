@@ -1,0 +1,18 @@
+server:
+  port: 9090
+
+eureka:
+  instance:
+    leaseRenewalIntervalInSeconds: 10
+    healthCheckUrlPath: /health
+
+logging:
+  level:
+    ROOT: INFO
+    org.springframework.web: DEBUG
+
+
+sidecar:
+  port: 3000
+  home-page-uri: http://localhost:3000
+  health-uri: http://localhost:3000/health.json

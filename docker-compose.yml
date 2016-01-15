@@ -6,6 +6,12 @@ simple1:
   build: ./simple1
   links:
    - eureka
+prana:
+  build: ./Prana
+  links:
+   - eureka
+  ports:
+   - "8078:8078"
 simple2:
   build: ./simple2
   links:
