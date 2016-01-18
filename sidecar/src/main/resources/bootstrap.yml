@@ -1,6 +1,4 @@
 spring:
-  application:
-    name: sidecar
   cloud:
     config:
       enabled: false

@@ -1,11 +1,15 @@
 server:
   port: 9090
 
+spring:
+  application:
+    name: sidecar
+
 eureka:
   instance:
     leaseRenewalIntervalInSeconds: 10
     healthCheckUrlPath: /health
-
+    preferIpAddress: true
 logging:
   level:
     ROOT: INFO
@@ -14,5 +18,4 @@ logging:
 
 sidecar:
   port: 3000
-  home-page-uri: http://localhost:3000
-  health-uri: http://localhost:3000/health.json
+  health-uri: http://192.168.0.144:3000/health.json

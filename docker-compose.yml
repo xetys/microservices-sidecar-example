@@ -6,8 +6,8 @@ simple1:
   build: ./simple1
   links:
    - eureka
-prana:
-  build: ./Prana
+sidecar:
+  build: ./sidecar
   links:
    - eureka
   ports:
