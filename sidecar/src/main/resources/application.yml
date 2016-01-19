@@ -3,19 +3,9 @@ server:
 
 spring:
   application:
-    name: sidecar
-
-eureka:
-  instance:
-    leaseRenewalIntervalInSeconds: 10
-    healthCheckUrlPath: /health
-    preferIpAddress: true
-logging:
-  level:
-    ROOT: INFO
-    org.springframework.web: DEBUG
-
+    name: ${side-app-name}
 
 sidecar:
   port: 3000
-  health-uri: http://192.168.0.144:3000/health.json
+  health-uri: http://localhost:${sidecar.port}/${health-uri:health.json}
+  home-page-uri: http://localhost:${sidecar.port}/

@@ -6,12 +6,12 @@ simple1:
   build: ./simple1
   links:
    - eureka
-sidecar:
-  build: ./sidecar
+railsdemo:
+  build: ./RailsEurekaClient
   links:
    - eureka
   ports:
-   - "8078:8078"
+   - "3000:3000"
 simple2:
   build: ./simple2
   links:

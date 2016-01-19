@@ -13,7 +13,7 @@ apply plugin: 'idea'
 
 
 group 'de.ktel.microservices'
-version '1.0-SNAPSHOT'
+version '1.0'
 
 ext {
     name = 'KTEL Sidecar Server'

@@ -6,4 +6,7 @@ spring:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
+      defaultZone: ${eureka-url:http://localhost:8761/eureka/}
+  instance:
+    lease-renewal-interval-in-seconds: ${eureka-interval:5}
+    prefer-ip-address: true
