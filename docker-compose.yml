@@ -7,11 +7,12 @@ simple1:
   links:
    - eureka
 railsdemo:
-  build: ./RailsEurekaClient
+  build: ./RailsApplication
   links:
    - eureka
   ports:
    - "3000:3000"
+   - "9090:9090"
 simple2:
   build: ./simple2
   links:

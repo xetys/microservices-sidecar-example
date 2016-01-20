@@ -6,6 +6,6 @@ spring:
     name: ${side-app-name}
 
 sidecar:
-  port: 3000
+  port: ${port:3000}
   health-uri: http://localhost:${sidecar.port}/${health-uri:health.json}
   home-page-uri: http://localhost:${sidecar.port}/
