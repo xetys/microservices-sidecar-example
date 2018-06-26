@@ -1,16 +1,17 @@
 buildscript {
     repositories {
-        jcenter()
-        maven { url "http://repo.spring.io/libs-snapshot-local" }
+        mavenCentral()
     }
     dependencies {
-        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.3.0.BUILD-SNAPSHOT")
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:2.0.3.RELEASE")
     }
 }
 
-apply plugin: 'spring-boot'
+apply plugin: 'java'
+apply plugin: 'eclipse'
 apply plugin: 'idea'
-
+apply plugin: 'org.springframework.boot'
+apply plugin: 'io.spring.dependency-management'
 
 group 'de.ktel.microservices'
 version '1.0'
